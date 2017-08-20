@@ -1,17 +1,18 @@
 import React from 'react';
-import { Accounts } from 'meteor/accounts-base';
+import LinksList from './LinksList';
+import PrivateHeader from './PrivateHeader';
+import AddLink from './AddLink';
+import LinksListFilter from './LinksListFilter';
 
-export default class Link extends React.Component {
-    onLogout() {
-        Accounts.logout();
-        console.log("Logging out");
-    }
-    render() {
-        return (
-            <div>
-                <h1>This is the link page.</h1>
-                <button onClick={this.onLogout.bind(this)}>Logout</button>
+export default () => {
+    return (
+        <div>
+            <PrivateHeader title="Your Links" />
+            <div className="page-content">
+                <LinksListFilter />
+                <AddLink />
+                <LinksList />
             </div>
-        )
-    }
-}
+        </div>
+    )
+};
