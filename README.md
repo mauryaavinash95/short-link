@@ -11,7 +11,7 @@ meteor run                                #to start the project.
 
 To view the live version of the app visit https://www.shorterr.herokuapp.com
 
-1. The application uses [DDP] (https://en.wikipedia.org/wiki/Distributed_Data_Protocol) to synchronize the client-server(client: Mini Mongo, server: Mongodb) database interactions.
+1. The application uses [DDP](https://en.wikipedia.org/wiki/Distributed_Data_Protocol) to synchronize the client-server(client: Mini Mongo, server: Mongodb) database interactions.
 2. Methods, Publications & Subscriptions are used to manage the database CRUDs.
 3. SCSS and packages such as `react-flip` move are used to style up the application.
 
